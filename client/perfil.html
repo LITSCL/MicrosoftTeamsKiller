@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="icon" type="favicon/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.13.0-web/css/all.min.css">
+    <script type="text/javascript" src="vendor/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="vendor/jquery-ui-1.13.0/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.13.0/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.13.0/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="vendor/ctxmenu-1.0.10/ctxmenu.css">
+    <script type="text/javascript" src="vendor/jquery-ui-1.13.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery.form-validator-2.3.79/jquery.form-validator.min.js"></script>
+    <script type="text/javascript" src="vendor/ctxmenu-1.0.10/ctxmenu.js"></script>
+    <script type="text/javascript" src="js/perfil.js"></script>
+</head>
+<body>
+    <div id="contenedor" style="display: none;">
+        <header>
+            <div id="menu">
+                <div class="icono-menu"></div>
+                <div class="icono-menu"></div>
+                <div class="icono-menu"></div>
+            </div>
+            <div id="datosUsuario">
+                <div id="nombreCompletoUsuario">
+                    <h3 id="nombresYApellidos">
+                        
+                    </h3>
+                </div>
+                <div id="cerrarSesion">
+                    <i id="salir" class="fas fa-door-open" title="Cerrar Sesión"></i>
+                </div>
+                <div id="imagen">
+                    <img id="imagenUsuario" src="">
+                </div>
+            </div>
+        </header>
+
+        <div id="acciones">
+            <div id="crear">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div id="unirse">
+                <i class="fas fa-sign-in-alt"></i>
+            </div>
+        </div>
+
+        <div id="ventanaCrearSala" class="ventana-flotante" style="display: none;">
+
+            <div id="botonCerrarCrear" class="cerrar-ventana-flotante">
+                <img class="boton-cerrar" src="img/cerrar.png">
+            </div>
+
+            <div class="formulario">
+                <form onsubmit="return false;"> <!-- El valor del evento "onsubmit" evita que se envíe el formulario. -->
+                    <input id="nombreSala" type="text" placeholder="Nombre de la sala" data-validation="custom" data-validation-regexp="^\w+(\s+\w+)*$">
+                    <input id="imagenSala" type="file" accept="image/*">
+                    <label id="subirImagen" for="imagenSala"><i class="far fa-file-image"></i>Subir imagen</label>
+                    <input id="crearSala" class="boton-ventana-flotante" type="submit" value="Crear sala">
+                </form>
+            </div>
+            <div id="errorCrearSala" class="error-campo" style="display: none;">
+
+            </div>
+        </div>
+
+        <div id="ventanaUnirseSala" class="ventana-flotante" style="display: none;">
+
+            <div id="botonCerrarUnirse" class="cerrar-ventana-flotante">
+                <img class="boton-cerrar" src="img/cerrar.png">
+            </div>
+
+            <div class="formulario">
+                <form onsubmit="return false;"> <!-- El valor del evento "onsubmit" evita que se envíe el formulario. -->
+                    <input id="idSala" type="text" placeholder="Identificador de la sala" data-validation="alphanumeric">
+                    <input id="unirseSala" class="boton-ventana-flotante" type="submit" value="Unirse a sala">
+                </form>
+            </div>
+            <div id="errorUnirseSala" class="error-campo" style="display: none;">
+
+            </div>
+            <div id="errorSala" class="error-campo" style="display: none;">
+                
+            </div>
+            
+        </div>
+
+        <div id="salas">
+            
+        </div>
+
+        <footer>
+            <ul>
+                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#">QUIENES SOMOS</a></li>
+                <li><a href="#">TÉRMINOS Y CONDICIONES</a></li>
+                <li><a href="#">DESCARGAS</a></li>
+                <li><a href="#">CARACTERISTICAS</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <div class="sesion-no-valida" style="display: none;">
+        <img src="img/logo.png">
+        <h3>Necesitas iniciar sesión, <a href="iniciar_sesion.html">Click aquí</a></h3>
+    </div>
+</body>
+</html>

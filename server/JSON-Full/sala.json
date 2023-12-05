@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "63d941beac34dd6a99364759"
+  },
+  "usuarios": [
+    "12345678-9"
+  ],
+  "nombre": "PHP",
+  "imagen": "imagen-1675182527000.png"
+},{
+  "_id": {
+    "$oid": "63d941efac34dd6a99364760"
+  },
+  "usuarios": [
+    "98765432-1"
+  ],
+  "nombre": "JavaScript",
+  "imagen": "imagen-1675182575378.png"
+}]

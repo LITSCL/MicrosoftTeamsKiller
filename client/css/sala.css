@@ -1,0 +1,174 @@
+#contenedor {
+  width: 95%;
+  margin: 10px auto;
+}
+
+#grilla {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 790px;
+  background-color: #fafafa;
+}
+
+#grilla div {
+  background-color: #fafafa;
+}
+
+#conectados {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border: 1px solid #a0a0a0;
+  border-radius: 5px;
+}
+
+#conectados h2 {
+  text-align: center;
+  font-family: spyagency-halfital-Custom;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 12px;
+}
+
+#usuariosConectados {
+  width: 90%;
+  height: 685px;
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+}
+
+#usuariosConectados div {
+  margin: 0px auto;
+  margin-bottom: 5px;
+  width: 95%;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid green;
+  border-radius: 7px;
+}
+
+#usuariosConectados div strong {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+#usuariosConectados div img {
+  display: block;
+  border-radius: 999px;
+  float: left;
+  height: 50px;
+}
+
+#sala {
+  display: flex;
+  justify-content: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#chat {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+  border: 1px solid #a0a0a0;
+  border-radius: 5px;
+}
+
+#chat h2 {
+  font-family: spyagency-halfital-Custom;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 12px;
+}
+
+#mensajes {
+  width: 90%;
+  height: 550px;
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+}
+
+.mensaje-escrito {
+  margin-left: 1%;
+  margin-bottom: 5px;
+  width: 97%;
+  border: 1px solid black;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.imagen-usuario img {
+  display: block;
+  border-radius: 999px;
+  float: left;
+  height: 50px;
+}
+
+.nombre-usuario {
+  background-color: #eeeeee !important;
+  height: 50px;
+  line-height: 50px;
+}
+
+.nombre-usuario strong {
+  font-size: 16px;
+}
+
+.contenido-mensaje {
+  padding-top: 10px;
+  background-color: #eeeeee !important;
+}
+
+textarea {
+  width: 90%;
+  margin: 0px auto;
+  background-color: #fafafa;
+}
+
+#enviarMensaje {
+  display: block;
+  width: 75px;
+  height: 35px;
+  margin: 0px auto;
+  margin-top: 5px;
+}
+  
+#videoLocal {
+  padding: 20px;
+  width: 500px;
+  height: 280px;
+}
+
+#videoPeer {
+  padding: 20px;
+  width: 500px;
+  height: 280px;
+}
+  
+#menuBoton {
+  text-align: center;
+  margin: 0px auto;
+  width: 200px;
+  height: 50px;
+  background-color: #fafafa;
+}
+  
+#menuBoton div {
+  width: 100%;
+  margin: 0px auto;
+}
+  
+#menuBoton div button {
+  display: block;
+  float: left;
+  width: 33.3%;
+  height: 50px;
+  cursor: pointer;
+}
+
+i {
+  font-size: 20px;
+}

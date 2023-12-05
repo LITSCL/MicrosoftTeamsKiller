@@ -1,0 +1,23 @@
+[{
+  "_id": "12345678-9",
+  "salas": [
+    "63d941beac34dd6a99364759"
+  ],
+  "clave": "123",
+  "primerNombre": "Daniel",
+  "segundoNombre": "Andres",
+  "apellidoPaterno": "Alvarez",
+  "apellidoMaterno": "Zamorano",
+  "imagen": "imagen-1675182463956.png"
+},{
+  "_id": "98765432-1",
+  "salas": [
+    "63d941efac34dd6a99364760"
+  ],
+  "clave": "123",
+  "primerNombre": "Esteban",
+  "segundoNombre": "Rodrigo",
+  "apellidoPaterno": "Alvarez",
+  "apellidoMaterno": "Zamorano",
+  "imagen": "imagen-1675182483586.png"
+}]

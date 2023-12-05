@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="icon" type="favicon/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/iniciar-sesion.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.13.0-web/css/all.min.css">
+    <script type="text/javascript" src="vendor/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery.form-validator-2.3.79/jquery.form-validator.min.js"></script>
+    <script type="text/javascript" src="js/iniciar-sesion.js"></script>
+</head>
+<body>
+    <div id="contenedor" style="display: none;">
+        <form onsubmit="return false;"> <!-- El valor del evento "onsubmit" evita que se envíe el formulario. -->
+            <h1 id="titulo">Microsoft Teams Killer</h1>
+            <div id="mensaje" style="display: none;"></div>
+            <input id="rut" type="text" placeholder="Rut" data-validation="custom" data-validation-regexp="^[0-9]+-[0-9kK]{1}$">
+            <input id="clave" type="password" placeholder="Contraseña" data-validation="alphanumeric">
+            <button id="iniciarSesion">Iniciar sesión</button>
+            <span id="recuperarClave"><a href="#">¿Olvidaste tu contraseña?</a></span>    
+        </form>
+        <div id="errorIniciarSesion" class="error-campo" style="display: none;">
+
+        </div>
+    </div>
+
+    <div id="crearCuenta" style="display: none;">
+        <span>¿Necesitas una cuenta? <a href="crear_cuenta.html">Registrate</a></span>
+    </div> 
+</body>
+</html>

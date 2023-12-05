@@ -1,0 +1,129 @@
+@font-face { /*Para titulos*/
+    font-family: "spyagency-halfital-Custom";
+        src: url("../fonts/spyagency-halfital.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}   
+
+@font-face { /*Para titulos*/
+    font-family: "pt-sans-italic-bold-Custom";
+        src: url("../fonts/pt-sans-italic-bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /*Para texto*/
+    font-family: "Panefresco-400wt-Regular-Custom";
+        src: url("../fonts/panefresco-400wt-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /*Para texto*/
+    font-family: "Panefresco-400wt-Italic-Custom";
+        src: url("../fonts/panefresco-400wt-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: Panefresco-400wt-Regular-Custom;
+    padding: 0px;
+    margin: 0px;
+    color: #212121;
+    font-size: 17px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+div {
+    background-color: white;
+}
+
+a {
+    font-weight: bold;
+    color: #0095f6;
+    font-family: Panefresco-400wt-Italic-Custom;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+h1 {
+    font-family: pt-sans-italic-bold-Custom;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    display: block;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    padding-left: 7px;
+    width: 75%;
+    height: 40px;
+    margin: 0px auto;
+    margin-top: 7px;
+    box-shadow: 0px 0px 2px #ccc inset;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border: 1px solid green;
+    box-shadow: 0px 0px 2px green inset;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button,
+input[type="submit"] { 
+    display: block;
+    font-weight: bold;
+    background-color: #00b9ac;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #00d4c5;
+}
+
+.help-block {
+    display: none;
+}
+
+.error-campo {
+    margin-top: 5px;
+    color: red;
+}
+
+.sesion-no-valida {
+    margin: 0px auto;
+    margin-top: 30px;
+    background-color: #fafafa;
+    height: 550px;
+    width: 400px;
+}
+
+.sesion-no-valida img {
+    height: 400px;
+    width: 400px;
+}
+
+.sesion-no-valida h3 {
+    text-align: center;
+    padding-top: 35px;
+}

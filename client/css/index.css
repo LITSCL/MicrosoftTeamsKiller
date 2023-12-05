@@ -1,0 +1,15 @@
+#contenedor {
+    display: block;
+    height: 950px;
+    width: 75%;
+    margin: 0px auto;
+    border: 1px solid #dcdcdc;
+}
+
+#demo {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 5px;
+}

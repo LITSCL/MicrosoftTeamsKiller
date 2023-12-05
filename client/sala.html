@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala</title>
+    <link rel="icon" type="favicon/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sala.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.13.0-web/css/all.min.css">
+    <script src="http://127.0.0.1:2900/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="vendor/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="js/sala.js"></script>
+</head>
+<body>
+    <div id="contenedor" style="display: none;">
+        <div id="grilla">
+            <div id="conectados">
+                <h2>Conectados</h2>
+                <div id="usuariosConectados">
+
+                </div>
+            </div>
+    
+            <div id="sala">
+                <video id="videoLocal" muted="muted"></video>
+                <video id="videoPeer"></video>
+            </div>
+    
+            <div id="chat">
+                <h2>Chat General</h2>
+                <div id="mensajes">
+                    
+                </div>
+                <div>
+                    <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+                    <button id="enviarMensaje">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menuBoton" style="display: none;">
+        <div>
+            <button id="botonMicrofono"><i id="microfono" class="fas fa-microphone"></i></button>
+            <button id="botonCamara"><i id="camara" class="fas fa-video"></i></button>
+            <button id="botonSalir"><i id="salir" class="fas fa-times-circle"></i></button>
+        </div>
+    </div>
+
+    <div class="sesion-no-valida" style="display: none;">
+        <img src="img/logo.png">
+        <h3>Necesitas iniciar sesión, <a href="iniciar_sesion.html">Click aquí</a></h3>
+    </div>
+</body>
+</html>

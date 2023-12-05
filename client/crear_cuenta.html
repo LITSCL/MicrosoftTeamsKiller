@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="icon" type="favicon/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/crear-cuenta.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.13.0-web/css/all.min.css">   
+    <script type="text/javascript" src="vendor/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery.form-validator-2.3.79/jquery.form-validator.min.js"></script>
+    <script type="text/javascript" src="js/crear-cuenta.js"></script>
+</head>
+<body>
+    <div id="contenedor" style="display: none;">
+        <form>
+            <h1 id="titulo">Microsoft Teams Killer</h1>
+            <h3 id="subtitulo">Registrate en nuestra plataforma de Video-Conferencia</h3>
+            <div id="mensaje" style="display: none;"></div>
+            <input id="rut" type="text" placeholder="Rut" data-validation="custom" data-validation-regexp="^[0-9]+-[0-9kK]{1}$">
+            <input id="clave" type="password" placeholder="Contraseña" data-validation="alphanumeric">
+            <input id="primerNombre" type="text" placeholder="Primer nombre" data-validation="custom" data-validation-regexp="^[A-z]+$">
+            <input id="segundoNombre" type="text" placeholder="Segundo nombre" data-validation="custom" data-validation-regexp="^[A-z]+$">
+            <input id="apellidoPaterno" type="text" placeholder="Apellido paterno" data-validation="custom" data-validation-regexp="^[A-z]+$">
+            <input id="apellidoMaterno" type="text" placeholder="Apellido materno" data-validation="custom" data-validation-regexp="^[A-z]+$">
+            <input id="imagen" type="file" accept="image/*">
+            <div id="contenedorImagen">
+                <label id="subirImagen" for="imagen"><i class="far fa-file-image"></i>Subir imagen</label>
+                <input id="crearCuenta" type="submit" value="Crear cuenta">
+            </div>     
+        </form>
+        <div id="errorCrearCuenta" class="error-campo" style="display: none;">
+
+        </div>
+    </div>
+    <div id="tienesCuenta" style="display: none;">
+        <span>¿Tienes una cuenta? <a href="iniciar_sesion.html">Inicia sesión</a></span>
+    </div> 
+</body>
+</html>
