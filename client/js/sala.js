@@ -5,7 +5,7 @@ $(document).ready(function() {
     if (localStorage.getItem("Usuario")) { //Evaluando si existe una sesión activa.
         var socket = io.connect("", {"forceNew": true});
     
-        socket.on("connect", () => {
+        socket.on("connect", function() {
             const idSocketLocal = socket.id;
     
             div_contenedor.style.display = "block";
